@@ -35,7 +35,7 @@ To compute the representations, the script uses:
 
    - a serialized pre-trained word embedding model compatible with gensim and memory mapped for fast loading, i.e. a gensim KeyedVectors model (c.f. [https://radimrehurek.com/gensim/] and [https://radimrehurek.com/gensim/models/keyedvectors.html]);
    - a serialized IDF dictionary (dict: vocabulary -> value)
-   - (possibly) a serialized Skip-Thoughts models, trained using Daniel Watson's implementation (c.f. [https://github.com/danielwatson6/skip-thoughts]) using the same word embeddings model used for processing the input.
+   - (possibly) a serialized Skip-Thoughts models, trained using Daniel Watson's implementation (c.f. [https://github.com/danielwatson6/skip-thoughts]) using the same word embeddings model used for processing the input. (A ST model used in the experiments, trained using Hartmann et al's Word2vwc skipgram model with 300 dim is available at <a href="https://drive.google.com/drive/folders/1HrQqevtT9SaXZGbx0RB6fVFKazR3OWCz?usp=sharing">Here</a>)
    - (possibly) an Elmo model (c.f. https://allennlp.org/elmo)
 
 ### Evaluating Sentence Representations
